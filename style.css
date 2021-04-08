@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' ;
+}
+body{
+    background: #f9f9f9;
+}
+body > div.space{
+    height: 5vh;
+}
+body > main {
+    box-shadow: -5px 5px 10px #dddddd;
+    margin:auto auto;
+    width: 25vw;
+    border-radius:30px ;
+    transition: .5s;
+    /* background: #f9f9f9; */
+    background: #ffffff;
+}
+body > main:hover {
+    transform: translateX(20px);
+    rotate: -3deg;
+    transition: .5s;
+    background: linear-gradient(40deg,#f9f9f9,#ffffff);
+    box-shadow: -15px 17px 20px #c4c4c4;
+}
+body > main > section.pic {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    text-align: center;
+}
+body > main > section.pic > img.pic{
+    border-radius: 50%;
+    height: 20vh;
+    padding: 2.5vh;
+}
+body > main > section.details {
+    text-align: center;
+}
+body > main > section.social {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    text-align: center;
+    color: #acacac;
+}
+body > main > section.social > div.icon{
+    padding: 5vh 0;
+}
+body > main > div.tweet{
+    text-align: center;
+    padding-bottom: 5vh;
+}
+body > main > div.tweet > button.tweet {
+    border: 0;
+    border-radius: 30px;
+    background:linear-gradient(to left, #01d9ff ,#0184ff);
+    height: 7vh;
+    width: 30vh;
+    box-shadow: 0px 5px 10px #dddddd;
+}
+body > main > div.tweet > button.tweet:hover{
+    box-shadow: -5px 5px 15px #acacac;
+}
+
+@media only screen and (max-width: 600px){
+    body > main{
+        width: 75vw;
+        margin: auto auto;
+    }
+    body > main:hover{
+        rotate: -1.5deg;
+    }
+}
