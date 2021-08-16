@@ -53,7 +53,7 @@ body > main > div.tweet{
     text-align: center;
     padding-bottom: 5vh;
 }
-body > main > div.tweet > button.tweet {
+body > main > div.tweet > a > button.tweet {
     border: 0;
     border-radius: 30px;
     background:linear-gradient(to left, #01d9ff ,#0184ff);
